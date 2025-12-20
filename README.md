@@ -1,1 +1,1 @@
-# Expense-Manager
+# Ai-Powered Expense-Manager
