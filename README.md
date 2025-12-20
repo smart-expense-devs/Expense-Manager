@@ -2,37 +2,37 @@ ROOT PROJECT STRUCTURE EXPECTED:
 smart-expense-tracker/
 │
 ├── app/
-│   ├── api/                       # BACKEND (Your main work)
-│   │   ├── auth/
-│   │   │   ├── login/route.js
-│   │   │   ├── register/route.js
-│   │   │   └── me/route.js
+│   ├── api/                       # Backend API routes
+│   │   ├── auth/                  # Authentication APIs
+│   │   │   ├── login/route.js     # User login
+│   │   │   ├── register/route.js  # User registration
+│   │   │   └── me/route.js        # Current user info
 │   │   │
-│   │   ├── expenses/
-│   │   │   ├── route.js           # GET, POST
-│   │   │   └── [id]/route.js      # PUT, DELETE
+│   │   ├── expenses/              # Expense management APIs
+│   │   │   ├── route.js           # GET, POST expenses
+│   │   │   └── [id]/route.js      # PUT, DELETE expense
 │   │   │
-│   │   ├── budget/
+│   │   ├── budget/                # Budget APIs
 │   │   │   └── route.js
 │   │   │
-│   │   └── summary/
-│   │       └── route.js           # Dashboard analytics
+│   │   └── summary/               # Dashboard analytics
+│   │       └── route.js
 │   │
-│   ├── (auth)/                    # AUTH PAGES (Frontend)
+│   ├── (auth)/                    # Authentication pages
 │   │   ├── login/page.jsx
 │   │   └── register/page.jsx
 │   │
-│   ├── (dashboard)/               # PROTECTED PAGES
+│   ├── (dashboard)/               # Protected application pages
 │   │   ├── dashboard/page.jsx
 │   │   ├── expenses/page.jsx
 │   │   ├── budget/page.jsx
 │   │   └── profile/page.jsx
 │   │
-│   ├── layout.jsx
-│   ├── page.jsx                   # Landing Page
-│   └── globals.css
+│   ├── layout.jsx                 # Root layout
+│   ├── page.jsx                   # Landing page
+│   └── globals.css                # Global styles
 │
-├── components/
+├── components/                    # Reusable UI components
 │   ├── charts/
 │   │   ├── ExpensePie.jsx
 │   │   └── MonthlyBar.jsx
@@ -44,18 +44,18 @@ smart-expense-tracker/
 │   │
 │   └── ui/                        # Buttons, cards, modals
 │
-├── lib/                           # BACKEND CORE LOGIC (YOU)
+├── lib/                           # Backend utilities
 │   ├── db.js                      # MongoDB connection
-│   ├── auth.js                    # JWT helpers
-│   └── validators.js
+│   ├── auth.js                    # Authentication helpers
+│   └── validators.js              # Input validation logic
 │
-├── models/                        # DATABASE MODELS (YOU)
+├── models/                        # Database schemas
 │   ├── User.js
 │   ├── Expense.js
 │   └── Budget.js
 │
-├── middleware.js                  # Auth protection
-├── .env.local
+├── middleware.js                  # Route protection middleware
+├── .env.local                     # Environment variables
 ├── package.json
 └── README.md
 
@@ -168,30 +168,7 @@ By the end of this step, you will have:
 ✅ Protected routes working
 
 📁 Folder Structure (Auth Only)
-smart-expense-tracker/
-│
-├── app/
-│   ├── api/
-│   │   └── auth/
-│   │       └── [...nextauth]/route.js
-│   │
-│   ├── (auth)/
-│   │   ├── login/page.jsx
-│   │   └── register/page.jsx
-│   │
-│   ├── dashboard/page.jsx   # protected
-│   └── page.jsx             # landing
-│
-├── lib/
-│   ├── db.js
-│   └── auth.js
-│
-├── models/
-│   └── User.js
-│
-├── middleware.js
-├── .env.local
-└── package.json
+<img width="397" height="701" alt="image" src="https://github.com/user-attachments/assets/a1941afa-7be4-4639-9c43-0f4981ceaeef" />
 
 Interview Explanation (Auth Phase)
 “I implemented authentication using NextAuth with Credentials Provider.
