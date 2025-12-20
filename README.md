@@ -110,7 +110,7 @@ By the end of this step, you will have:
 ✅ Protected routes working
 
 📁 Folder Structure (Auth Only)
-<img width="397" height="701" alt="image" src="https://github.com/user-attachments/assets/a1941afa-7be4-4639-9c43-0f4981ceaeef" />
+<img width="383" height="593" alt="image" src="https://github.com/user-attachments/assets/010f3af8-4f34-4ab5-8a5c-4bf420f57511" />
 
 Interview Explanation (Auth Phase)
 “I implemented authentication using NextAuth with Credentials Provider.
