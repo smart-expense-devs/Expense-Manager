@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-  ],
+, "models/Budget.js", "models/Expense.js", "models/User.js", "middlewares/next-auth-middleware.js", "lib/db_connect.js", "app/api/auth/[...nextauth]/route.js", "app/(auth)/register/page.jsx"  ],
   "exclude": ["node_modules"]
 }

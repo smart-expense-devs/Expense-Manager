@@ -1,4 +1,8 @@
+
 import mongoose from 'mongoose';
+
+
+const saltRound=10;
 
 const UserSchema = new mongoose.Schema({
   name: {
@@ -14,7 +18,7 @@ const UserSchema = new mongoose.Schema({
   password: {
     type: String,
     required: [true, 'Please provide a password'],
-    minlength: 6,
+    
   },
   createdAt: {
     type: Date,
@@ -22,4 +26,4 @@ const UserSchema = new mongoose.Schema({
   },
 });
 
-export default mongoose.models.User || mongoose.model('User', UserSchema);
+export default mongoose.models.user || mongoose.model('user', UserSchema);

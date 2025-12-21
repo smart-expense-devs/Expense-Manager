@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
+    "axios": "^1.13.2",
     "bcryptjs": "^3.0.3",
     "lucide-react": "^0.562.0",
     "mongodb": "^7.0.0",
