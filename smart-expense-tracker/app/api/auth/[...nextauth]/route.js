@@ -5,11 +5,6 @@ import AuthMiddleware from "../../../../middlewares/next-auth-middleware"
 const handler=NextAuth({
 providers: [
   CredentialsProvider({
-    name: "Email-Password",
-    credentials: {
-      email: { label: "Email", type: "email", placeholder: "enter the email" },
-      password: { label: "Password", type: "password" ,placeholder: "enter the password"}
-    },
     async authorize(credentials, req) {
       try{
         await connectDB();
